@@ -1,0 +1,2352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/acdec55a47.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="file:///D:/Dzaki/font%20awesome/fontawesome-free-5.11.2-web/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="owlcarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/css/owl.theme.default.min.css">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: dmsans-bold;
+            src: url('assets/font/DMSans-Bold.ttf');
+        }
+
+        @font-face {
+            font-family: dmsans-regular;
+            src: url('assets/font/DMSans-Regular.ttf');
+        }
+
+        * {
+            font-family: dmsans-regular;
+            
+        }
+
+        body {
+            background: #FBFBFB;
+            overflow-x: hidden;
+        }
+
+        .navbar-brand {
+            font-family: dmsans-bold;
+            color: white !important;
+        }
+
+        .navbar .navbar-nav .btn {
+            width: 140px;
+            height: 44px;
+            border: 1.5px solid white;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .jumbotron {
+            height: 108vh;
+            background: url('assets/img/Group\ 89.png');
+            background-size: cover;
+            margin-top: -94px;
+        }
+
+        .jumbotron .container {
+            margin-top: 110px;
+        }
+
+        .jumbotron h1 {
+            font-family: dmsans-bold;
+            color: white;
+            font-size: 68px;
+            width: 549px;
+        }
+
+        .jumbotron p {
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.85);
+            width: 461px;
+        }
+
+        .kotak {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 20px 40px rgba(132, 132, 132, 0.2);
+            height: 167px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .dropdown-menu {
+            height: 150px;
+            overflow-y: scroll;
+        }
+
+        .kotak .kategori .btn {
+            background: #3454D1;
+            width: 200px;
+            height: 58px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            color: white;
+        }
+
+        .dropdown-toggle{
+            background-color: transparent;
+            border: none;
+        }
+
+        .kotak .kategori h6 {
+            font-family: dmsans-bold;
+            color: #152134;
+            font-size: 24px;
+        }
+
+        .kotak .kategori span {
+            color: #676767;
+            margin-top: 12px;
+            font-size: 20px;
+        }
+
+        .box {
+            margin-top: 250px;
+        }
+
+        .box h1 {
+            font-size: 44px;
+            font-family: dmsans-bold;
+            color: #152134;
+        }
+
+        .box .row .kota {
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            z-index: -2;
+            position: relative;
+        }
+
+        .box .row .kota .overlay {
+            background-color: rgba(0, 0, 0, .3);
+            z-index: -1;
+            position: absolute;
+            border-radius: 8px;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+
+        .box .row .col-md-6:nth-child(1) .kota {
+            background: url('assets/img/aaron-burson-YihQdPSK9jI-unsplash.jpg');
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .box .row .col-md-6:nth-child(2) .kota {
+            background: url('assets/img/nathan-dumlao-1qsbplLDUa8-unsplash.jpg');
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .box .row .col-md-4:nth-child(1) .kota {
+            background: url('assets/img/roland-denes-3iYvT9ZdEig-unsplash.jpg');
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .box .row .col-md-4:nth-child(2) .kota {
+            background: url('assets/img/felipe-simo-HaOKtA3olN0-unsplash.jpg');
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .box .row .col-md-4:nth-child(3) .kota {
+            background: url('assets/img/ken-yam-qr8Ci2tzyR8-unsplash.jpg');
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .box .row2 {
+            margin-top: 35px;
+        }
+
+        .box .row .kota h2 {
+            font-size: 44px;
+            color: white;
+            font-family: dmsans-bold;
+            margin-bottom: 72px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+        }
+
+        .carousel {
+            margin-top: 180px;
+        }
+
+        .carousel h1 {
+            font-size: 44px;
+            font-family: dmsans-bold;
+        }
+
+        .carousel .judul .panah .panah1 {
+            transform: rotate(180deg);
+        }
+
+        .carousel .judul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .owl-carousel {
+            margin-top: 52px;
+            /* background-color: salmon; */
+            width: 100%;
+        }
+
+        .owl-carousel .item1 {
+            background: url('assets/img/ranjith-alingal-f-MvFZ6-M3U-unsplash.jpg');
+            position: relative;
+            z-index: -2;
+            width: 350px;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            background-size: cover;
+            height: 496px;
+        }
+
+        .owl-carousel .item {
+            border-radius: 8px;
+            height: 496px;
+        }
+
+        .owl-carousel .item2 {
+            background: url('assets/img/digital-marketing-agency-ntwrk-g39p1kDjvSY-unsplash.jpg');
+            position: relative;
+            z-index: -2;
+            width: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 496px;
+        }
+
+        .owl-carousel .item3 {
+            background: url('assets/img/luke-van-zyl-koH7IVuwRLw-unsplash\ \(1\).png');
+            position: relative;
+            background-repeat: no-repeat;
+            z-index: -2;
+            width: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            background-size: cover;
+            height: 496px;
+        }
+
+        .owl-carousel span {
+            display: none;
+        }
+
+        .owl-carousel .item4 {
+            background: url('assets/img/mateo-fernandez-XTC538P_eWk-unsplash.png');
+            position: relative;
+            background-repeat: no-repeat;
+            z-index: -2;
+            width: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            background-size: cover;
+            height: 496px;
+        }
+
+        .owl-carousel .item h1 {
+            font-size: 40px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+            margin-bottom: 28px;
+            font-family: dmsans-bold;
+            color: white;
+        }
+
+        .owl-carousel .overlay {
+            position: absolute;
+            border-radius: 8px;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, .2);
+            z-index: -1;
+        }
+
+        .container4 .judul h1 {
+            font-size: 44px;
+            font-family: dmsans-bold;
+        }
+
+        .container4 .judul span {
+            font-size: 18px;
+            display: inline-block;
+            margin-top: 13px;
+            color: #676767;
+        }
+
+        .container4 {
+            margin-top: 180px;
+        }
+
+        .container4 .row {
+            margin-top: 50px;
+        }
+
+        .container4 .row .col-md-12 {
+            background: url('assets/img/2\ 974.png');
+            border-radius: 8px;
+            background-size: cover;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            height: 670px;
+        }
+
+        .container4 .kotak {
+            background: #3454D1;
+            width: 180px;
+            margin-right: 78px;
+            transform: translateY(90px);
+            color: white;
+            height: 180px;
+            box-shadow: 0px 8px 32px rgba(52, 84, 209, 0.15);
+        }
+
+        .container4 .kotak h2 {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .client .row .col-6:nth-child(1) {
+            background: url('assets/img/stefan-stefancik-QXevDflbl8A-unsplash\ 2.png');
+            background-size: cover;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            width: 444px;
+            height: 600px;
+            margin-top: 50px;
+            border-radius: 8px;
+        }
+
+        .clientjudul .judul h1 {
+            font-size: 44px;
+            font-family: dmsans-bold;
+        }
+
+        .client .row .col-6:nth-child(2) .pesan p {
+            font-size: 20px;
+            width: 423px;
+            margin-top: -90px;
+            color: #676767;
+            line-height: 34px;
+        }
+
+        .client .row .col-6:nth-child(2) .pesan .nama h2 {
+            font-size: 23px;
+            font-family: dmsans-bold;
+        }
+
+        .client .row .col-6:nth-child(2) .pesan span {
+            font-size: 18px;
+            color: #676767;
+        }
+
+        .client .row .col-6:nth-child(2) .pesan {
+            display: flex;
+            /* background-color: salmon; */
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 55px;
+            margin-left: 40px;
+            height: 420px;
+        }
+
+        .client .row .col-6:nth-child(2) .pesan img {
+            width: 70px;
+            margin-bottom: 100px;
+        }
+
+        .carousel-inner {
+            margin-top: 286px;
+            height: 780px;
+        }
+
+        .client .row .col-6:nth-child(1) .kotak2 {
+            width: 120px;
+            transform: translateY(30px) translateX(60px);
+            position: absolute;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 120px;
+            background: #3454D1;
+            box-shadow: 0px 8px 32px rgba(52, 84, 209, 0.12);
+        }
+
+        .client .row .col-6:nth-child(1) .kotak2 img {
+            width: 64px;
+        }
+
+        .kartu {
+            margin-top: 150px;
+        }
+
+        .kartu .judul h1 {
+            font-size: 44px;
+            font-family: dmsans-bold;
+        }
+
+        .kartu .row {
+            margin-top: 50px;
+        }
+
+        .kartu .row .card img {
+            height: 239px;
+        }
+
+        .kartu .row .card .card-body h1 {
+            font-size: 16.5px;
+            font-family: dmsans-bold;
+        }
+
+        .kartu .row .card-body {
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .kartu .row .card-body p.card-text {
+            font-size: 14px;
+            /* margin-top: 16px; */
+            color: #676767;
+            line-height: 24px;
+            width: 284px;
+        }
+
+        .kartu .row .card-body .orang img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .kartu .row .card-body .orang {
+            display: flex;
+            height: 60px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .kartu .row .card-body .orang .tgl {
+            font-size: 12px;
+            margin: auto 0;
+            color: #484848;
+        }
+
+        .kartu .row .card-body .orang .nama {
+            font-size: 12px;
+            margin-left: 5px;
+            color: #484848;
+        }
+
+        .footer .blog h1 {
+            font-family: dmsans-bold;
+            font-size: 24px;
+        }
+
+        .footer .blog p {
+            font-size: 16px;
+            color: #676767;
+            line-height: 28px;
+            /* width: 285px; */
+        }
+
+        .footer .blog {
+            /* background-color: salmon; */
+            width: 17%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 270px;
+        }
+
+        .footer .blog:nth-child(2) {
+            width: 10%;
+        }
+
+        .footer .blog:nth-child(3) {
+            width: 12%;
+        }
+
+        .footer .blog:nth-child(4) {
+            width: 17%;
+        }
+
+        .footer .blog input {
+            margin-top: -18px;
+        }
+
+        .footer .blog1 {
+            width: 22%;
+            height: 200px;
+        }
+
+        .footer .kontak {
+            width: 42%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer {
+            margin-top: 180px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 407px;
+            background: #FFFFFF;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .footer .blog a {
+            font-size: 18px;
+            color: #676767;
+        }
+
+        .footer .blog .btn {
+            background: #3454D1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 8px 32px rgba(52, 84, 209, 0.12);
+            width: 164px;
+            height: 38px;
+            color: white;
+            border-radius: 8px;
+        }
+
+        .footer .blog ::-webkit-input-placeholder {
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.3);
+        }
+
+        .footer .blog input {
+            height: 44px;
+        }
+
+        .carousel-inner .clientjudul .panah img {
+            width: 50px;
+        }
+
+
+
+        @media (max-width: 992px) {
+
+            .kotak .kategori .btn {
+                background: #3454D1;
+                width: 140px;
+                height: 58px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                color: white;
+            }
+
+            .kotak .kategori h6 {
+                font-family: dmsans-bold;
+                color: #152134;
+                font-size: 20px;
+            }
+
+            .kotak .kategori span {
+                color: #676767;
+                margin-top: 12px;
+                font-size: 17px;
+            }
+
+            .container4 .row .col-md-12 {
+                background: url('assets/img/2\ 974.png');
+                border-radius: 8px;
+                background-size: cover;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                height: 550px;
+            }
+
+            .box .row .col-md-6:nth-child(1) .kota {
+                background: url('assets/img/aaron-burson-YihQdPSK9jI-unsplash.jpg');
+                background-size: cover;
+                height: 85vh;
+            }
+
+            .box .row .col-md-6:nth-child(2) .kota {
+                background: url('assets/img/nathan-dumlao-1qsbplLDUa8-unsplash.jpg');
+                background-size: cover;
+                height: 85vh;
+            }
+
+            .box .row .col-md-4:nth-child(1) .kota {
+                height: 70vh;
+            }
+
+            .box .row .col-md-4:nth-child(2) .kota {
+                height: 70vh;
+            }
+
+            .box .row .col-md-4:nth-child(3) .kota {
+                height: 70vh;
+            }
+
+            .container4 .kotak {
+                background: #3454D1;
+                width: 130px;
+                margin-right: 78px;
+                transform: translateY(65px);
+                color: white;
+                height: 130px;
+                box-shadow: 0px 8px 32px rgba(52, 84, 209, 0.15);
+            }
+
+            .container4 .kotak h2 {
+                font-size: 28px;
+                text-align: center;
+            }
+
+            .box .row .kota h2 {
+                font-size: 36px;
+            }
+
+            .client .row .col-6:nth-child(1) {
+                background: url('assets/img/stefan-stefancik-QXevDflbl8A-unsplash\ 2.png');
+                background-size: cover;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                height: 500px;
+                margin-top: 50px;
+                border-radius: 8px;
+            }
+
+            .client .row .col-6:nth-child(2) .pesan p {
+                width: 340px;
+                color: #676767;
+            }
+
+            .client .row .col-6:nth-child(2) .pesan img {
+                width: 50px;
+            }
+
+            .client .row .col-6:nth-child(1) .kotak2 {
+                width: 80px;
+                transform: translateY(30px) translateX(60px);
+                position: absolute;
+                border-radius: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 80px;
+                background: #3454D1;
+                box-shadow: 0px 8px 32px rgba(52, 84, 209, 0.12);
+            }
+
+            .client .row .col-6:nth-child(1) .kotak2 img {
+                width: 44px;
+            }
+
+            .owl-carousel .item {
+                border-radius: 8px;
+                height: 456px;
+            }
+
+            .kartu .card {
+                width: 210px;
+            }
+
+            .kartu {
+                margin-top: 50px;
+            }
+
+            .kartu .row .card-body .orang img {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+            }
+
+            .kartu .row .card-body .orang {
+                display: flex;
+                height: 60px;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .kartu .row .card-body .orang .tgl {
+                font-size: 10px;
+                margin: auto 0;
+                color: #484848;
+            }
+
+            .kartu .row .card .card-body h1 {
+                font-size: 14px;
+                font-family: dmsans-bold;
+            }
+
+            .kartu .row .card-body p.card-text {
+                font-size: 12px;
+                /* margin-top: 16px; */
+                color: #676767;
+                line-height: 19px;
+                width: 180px;
+            }
+
+            .kartu .row .card-body .orang .nama {
+                font-size: 10px;
+                margin-left: 5px;
+                color: #484848;
+            }
+
+
+            .footer .blog:nth-child(2) {
+                width: 10%;
+            }
+
+            .footer .blog:nth-child(3) {
+                width: 12%;
+            }
+
+            .footer .blog:nth-child(4) {
+                width: 17%;
+            }
+
+            .footer .blog h1 {
+                font-family: dmsans-bold;
+                font-size: 22px;
+            }
+
+            .footer .blog p {
+                font-size: 14px;
+                color: #676767;
+                line-height: 28px;
+                /* width: 285px; */
+            }
+
+            .footer .blog a {
+                font-size: 14px;
+            }
+
+        }
+
+        @media (max-width: 845px) {
+
+
+            .client .row .col-6:nth-child(1) {
+                background: url('assets/img/stefan-stefancik-QXevDflbl8A-unsplash\ 2.png');
+                background-size: cover;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                height: 430px;
+                margin-top: 50px;
+                border-radius: 8px;
+            }
+
+            .client .row .col-6:nth-child(2) .pesan p {
+                width: 300px;
+                line-height: 28px;
+                font-size: 15px;
+                color: #676767;
+            }
+
+            .carousel-inner {
+                margin-top: 236px;
+            }
+
+            .client .row .col-6:nth-child(2) .pesan img {
+                width: 40px;
+            }
+
+            .client .row .col-6:nth-child(1) .kotak2 {
+                width: 70px;
+                transform: translateY(25px) translateX(40px);
+                position: absolute;
+                border-radius: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 70px;
+                background: #3454D1;
+                box-shadow: 0px 8px 32px rgba(52, 84, 209, 0.12);
+            }
+
+            .client .row .col-6:nth-child(1) .kotak2 img {
+                width: 35px;
+            }
+
+            .client .row .col-6:nth-child(2) .pesan .nama h2 {
+                font-size: 19px;
+                font-family: dmsans-bold;
+            }
+
+            .client .row .col-6:nth-child(2) .pesan span {
+                font-size: 15px;
+                color: #676767;
+            }
+
+            .kartu {
+                margin-top: -10px;
+            }
+
+
+
+        }
+
+
+
+        @media (max-width: 815px) {
+
+            .owl-carousel .item {
+                border-radius: 8px;
+                height: 406px;
+                width: 300px;
+            }
+
+            .owl-carousel .item h1 {
+                font-size: 35px;
+                text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+                margin-bottom: 28px;
+                font-family: dmsans-bold;
+                color: white;
+            }
+
+        }
+
+
+        @media (max-width: 768px) {
+
+
+            .jumbotron h1 {
+
+                font-size: 48px;
+                width: 549px;
+            }
+
+            .jumbotron {
+                height: 86vh;
+            }
+
+            .jumbotron p {
+                font-size: 17px;
+            }
+
+            .kotak .kategori .btn {
+                background: #3454D1;
+                width: 100px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                color: white;
+            }
+
+            .kotak .kategori h6 {
+                font-size: 17px;
+            }
+
+            .kotak .kategori span {
+                color: #676767;
+                margin-top: 12px;
+                font-size: 14px;
+            }
+
+            .box h1 {
+                font-size: 35px;
+            }
+
+            .box .row .col-md-6:nth-child(1) .kota {
+                background: url('assets/img/aaron-burson-YihQdPSK9jI-unsplash.jpg');
+                background-size: cover;
+                height: 78vh;
+            }
+
+            .box .row .col-md-6:nth-child(2) .kota {
+                margin-top: 35px;
+                background: url('assets/img/nathan-dumlao-1qsbplLDUa8-unsplash.jpg');
+                background-size: cover;
+                height: 78vh;
+            }
+
+            .box .row .col-md-4:nth-child(1) .kota {
+                height: 78vh;
+            }
+
+            .box .row .col-md-4:nth-child(2) .kota {
+                height: 78vh;
+                margin-top: 35px;
+            }
+
+            .box .row .col-md-4:nth-child(3) .kota {
+                height: 78vh;
+                margin-top: 35px;
+            }
+
+            .carousel h1 {
+                font-size: 35px;
+            }
+
+            .carousel .judul .panah img {
+                width: 40px;
+            }
+
+            .container4 .judul h1 {
+                font-size: 35px;
+                font-family: dmsans-bold;
+            }
+
+            .container4 .judul span {
+                font-size: 16px;
+                display: inline-block;
+                margin-top: 13px;
+                color: #676767;
+            }
+
+            .container4 {
+                margin-top: 180px;
+            }
+
+            .container4 .row {
+                margin-top: 50px;
+            }
+
+            .container4 .row .col-md-12 {
+                background: url('assets/img/2\ 974.png');
+                border-radius: 8px;
+                background-size: cover;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                height: 500px;
+            }
+
+            .container4 .kotak {
+                background: #3454D1;
+                width: 120px;
+                margin-right: 78px;
+                transform: translateY(60px);
+                color: white;
+                height: 120px;
+                box-shadow: 0px 8px 32px rgba(52, 84, 209, 0.15);
+            }
+
+            .container4 .kotak h2 {
+                font-size: 25px;
+                text-align: center;
+            }
+
+            .client .row .col-6:nth-child(1) {
+                background: url('assets/img/stefan-stefancik-QXevDflbl8A-unsplash\ 2.png');
+                background-size: cover;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                height: 360px;
+                margin-top: 50px;
+                border-radius: 8px;
+            }
+
+
+            .client .row .col-6:nth-child(2) .pesan p {
+                width: 270px;
+                line-height: 28px;
+                font-size: 13px;
+                color: #676767;
+            }
+
+            .carousel-inner {
+                margin-top: 236px;
+            }
+
+            .client .row .col-6:nth-child(2) .pesan img {
+                width: 40px;
+            }
+
+            .client .row .col-6:nth-child(1) .kotak2 {
+                width: 70px;
+                transform: translateY(25px) translateX(40px);
+                position: absolute;
+                border-radius: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 70px;
+                background: #3454D1;
+                box-shadow: 0px 8px 32px rgba(52, 84, 209, 0.12);
+            }
+
+            .client .row .col-6:nth-child(1) .kotak2 img {
+                width: 35px;
+            }
+
+            .client .row .col-6:nth-child(2) .pesan .nama h2 {
+                font-size: 19px;
+                font-family: dmsans-bold;
+            }
+
+            .client .row .col-6:nth-child(2) .pesan span {
+                font-size: 15px;
+                color: #676767;
+            }
+
+            .client .row .col-6:nth-child(2) .pesan {
+                display: flex;
+                /* background-color: salmon; */
+                flex-direction: column;
+                justify-content: space-between;
+                margin-top: 55px;
+                margin-left: 40px;
+                height: 360px;
+            }
+
+            .kartu {
+                margin-top: -130px;
+            }
+
+            .kartu .judul h1 {
+                font-size: 35px;
+                font-family: dmsans-bold;
+            }
+
+            .kartu .row .card {
+                width: 80%;
+            }
+
+            .kartu .row {
+                margin-top: 50px;
+            }
+
+            .kartu .row .card img {
+                height: 239px;
+            }
+
+            .kartu .row .card .card-body h1 {
+                font-size: 16.5px;
+                font-family: dmsans-bold;
+            }
+
+            .kartu .row .card-body {
+                height: 250px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .kartu .row .card-body p.card-text {
+                font-size: 14px;
+                /* margin-top: 16px; */
+                color: #676767;
+                line-height: 24px;
+                width: 284px;
+            }
+
+            .kartu .row .col-md-4 {
+                display: flex;
+                justify-content: center;
+            }
+
+            .kartu .row .col-md-4:nth-child(2) .card {
+                margin-top: 35px;
+            }
+
+            .kartu .row .col-md-4:nth-child(3) .card {
+                margin-top: 35px;
+            }
+
+            .kartu .row .card-body .orang img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+
+            .kartu .row .card-body .orang {
+                display: flex;
+                height: 60px;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .kartu .row .card-body .orang .tgl {
+                font-size: 12px;
+                margin: auto 0;
+                color: #484848;
+            }
+
+            .kartu .row .card-body .orang .nama {
+                font-size: 12px;
+                margin-left: 5px;
+                color: #484848;
+            }
+
+
+            .footer .blog:nth-child(2) {
+                width: 10%;
+            }
+
+            .footer .blog:nth-child(3) {
+                width: 12%;
+            }
+
+            .footer .blog:nth-child(4) {
+                width: 17%;
+            }
+
+            .footer .blog h1 {
+                font-family: dmsans-bold;
+                font-size: 17px;
+            }
+
+            .footer .blog p {
+                font-size: 12px;
+                color: #676767;
+                line-height: 23px;
+                /* width: 285px; */
+            }
+
+            .footer .blog a {
+                font-size: 14px;
+            }
+
+            .footer .blog {
+                /* background-color: salmon; */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 220px;
+            }
+
+            .footer .blog .btn {
+                width: 124px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 33px;
+                font-size: 12px;
+                color: white;
+                border-radius: 8px;
+            }
+
+            .footer .blog input {
+                height: 33px;
+            }
+
+            .footer .blog ::-webkit-input-placeholder {
+                font-size: 12px;
+            }
+
+        }
+
+
+        @media (max-width: 730px) {
+
+            .owl-carousel .item {
+                border-radius: 8px;
+                height: 356px;
+                width: 250px;
+            }
+
+            .owl-carousel .item h1 {
+                font-size: 25px;
+                text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+                margin-bottom: 28px;
+                font-family: dmsans-bold;
+                color: white;
+            }
+
+        }
+
+        @media (max-width: 639px) {
+
+            .client .row .col-6:nth-child(2) .pesan p {
+                width: 230px;
+                line-height: 28px;
+                font-size: 12.5px;
+                color: #676767;
+            }
+
+        }
+
+
+        @media (max-width: 625px) {
+
+            .owl-carousel .item {
+                width: 230px;
+                height: 326px;
+            }
+
+        }
+
+        @media (max-width: 560px) {
+
+            
+            .navbar-brand {
+                font-family: dmsans-bold;
+                color: #3454D1 !important;
+            }
+
+            .navbar {
+                background-color: white;
+                padding-bottom: 15px;
+                padding-top: 15px !important;
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+
+            .navbar .navbar-nav .btn {
+                width: 140px;
+                height: 44px;
+                border: 1.5px solid #3454D1;
+                color: #3454D1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .navbar .navbar-nav .nav-link {
+                margin-right: -5px !important;
+                color: #3454D1 !important;
+            }
+
+            .client .row .col-6:nth-child(1) {
+                background: url('assets/img/stefan-stefancik-QXevDflbl8A-unsplash\ 2.png');
+                background-size: cover;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                height: 340px;
+                margin-top: 50px;
+                border-radius: 8px;
+            }
+
+
+            .carousel-inner {
+                margin-top: 236px;
+            }
+
+            .client .row .col-6:nth-child(2) .pesan img {
+                width: 38px;
+            }
+
+            .client .row .col-6:nth-child(1) .kotak2 {
+                width: 70px;
+                transform: translateY(20px) translateX(40px);
+                position: absolute;
+                border-radius: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 70px;
+                background: #3454D1;
+                box-shadow: 0px 8px 32px rgba(52, 84, 209, 0.12);
+            }
+
+            .client .row .col-6:nth-child(1) .kotak2 img {
+                width: 35px;
+            }
+
+            .client .row .col-6:nth-child(2) .pesan .nama h2 {
+                font-size: 18px;
+                font-family: dmsans-bold;
+            }
+
+            .client .row .col-6:nth-child(2) .pesan span {
+                font-size: 14px;
+                color: #676767;
+            }
+
+            .client .row .col-6:nth-child(2) .pesan p {
+                width: 200px;
+                line-height: 24px;
+                font-size: 12px;
+                color: #676767;
+            }
+
+            .client .row .col-6:nth-child(2) .pesan {
+                display: flex;
+                /* background-color: salmon; */
+                flex-direction: column;
+                justify-content: space-between;
+                margin-top: 55px;
+                margin-left: 30px;
+                height: 340px;
+            }
+
+            .carousel-inner .clientjudul .judul h1 {
+                font-size: 30px;
+            }
+
+            .carousel-inner .clientjudul .panah img {
+                width: 35px;
+            }
+
+            .jumbotron h1 {
+                font-size: 40px;
+                width: 450px;
+                margin-top: 130px;
+            }
+
+            .kotak {
+                /* background-color: salmon; */
+                transform: translateY(45px);
+                height: 140px;
+            }
+
+            .box h1 {
+                width: 400px;
+                font-size: 30px;
+            }
+
+            .box .row .col-md-6:nth-child(1) .kota {
+                background: url('assets/img/aaron-burson-YihQdPSK9jI-unsplash.jpg');
+                background-size: cover;
+                width: 85%;
+                height: 78vh;
+            }
+
+            .box .row .col-md-6:nth-child(2) .kota {
+                margin-top: 35px;
+                background: url('assets/img/nathan-dumlao-1qsbplLDUa8-unsplash.jpg');
+                background-size: cover;
+                height: 78vh;
+                width: 85%;
+            }
+
+            .box .row .col-md-6,
+            .box .row .col-md-4 {
+                display: flex;
+                justify-content: center;
+            }
+
+            .box .row .col-md-4:nth-child(1) .kota {
+                height: 78vh;
+                width: 85%;
+            }
+
+            .box .row .col-md-4:nth-child(2) .kota {
+                height: 78vh;
+                margin-top: 35px;
+                width: 85%;
+            }
+
+            .box .row .col-md-4:nth-child(3) .kota {
+                height: 78vh;
+                width: 85%;
+                margin-top: 35px;
+            }
+
+
+            .carousel h1 {
+                font-size: 30px;
+            }
+
+            .carousel .judul .panah img {
+                width: 35px;
+            }
+
+
+            .container4 .judul h1 {
+                font-size: 30px;
+                font-family: dmsans-bold;
+            }
+
+            .container4 .judul span {
+                font-size: 13px;
+                margin-top: 13px;
+                display: inline-block;
+                color: #676767;
+            }
+
+            .container4 {
+                margin-top: 140px;
+            }
+
+            .container4 .row {
+                margin-top: 50px;
+            }
+
+            .container4 .row .col-md-12 {
+                background: url('assets/img/2\ 974.png');
+                border-radius: 8px;
+                background-size: cover;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                height: 350px;
+            }
+
+            .container4 .kotak {
+                background: #3454D1;
+                width: 100px;
+                margin-right: 78px;
+                transform: translateY(50px);
+                color: white;
+                height: 100px;
+                box-shadow: 0px 8px 32px rgba(52, 84, 209, 0.15);
+            }
+
+            .container4 .kotak h2 {
+                font-size: 20px;
+                width: 50px;
+                text-align: center;
+            }
+
+            .kartu .row .card {
+                width: 70%;
+            }
+
+            .footer .blog1 {
+                width: 50%;
+                display: flex;
+                height: auto;
+                justify-content: space-evenly;
+                text-align: center;
+            }
+
+            .footer .blog:nth-child(2) {
+                width: 50%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .footer .blog:nth-child(3) {
+                width: 50%;
+                /* background-color: salmon; */
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .footer .blog:nth-child(4) {
+                width: 50%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .footer .blog h1 {
+                font-family: dmsans-bold;
+                font-size: 19px;
+            }
+
+            .footer .blog p {
+                font-size: 14px;
+                color: #676767;
+                line-height: 23px;
+                /* width: 285px; */
+            }
+
+            .footer .blog a {
+                font-size: 14px;
+            }
+
+            .footer .blog {
+                /* background-color: salmon; */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 220px;
+            }
+
+            .footer {
+                flex-direction: column;
+                height: 1000px;
+            }
+
+            .footer .blog .btn {
+                width: 124px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 33px;
+                font-size: 12px;
+                color: white;
+                border-radius: 8px;
+            }
+
+            .footer .blog input {
+                height: 33px;
+            }
+
+            .footer .blog ::-webkit-input-placeholder {
+                font-size: 12px;
+            }
+
+        }
+
+
+
+        @media (max-width: 460px) {
+
+            html{
+                overflow-x: hidden;
+            }
+
+            .navbar-brand {
+                font-family: dmsans-bold;
+                color: #3454D1 !important;
+            }
+
+            .navbar {
+                background-color: white;
+                padding-bottom: 15px;
+                padding-top: 15px !important;
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+
+            .navbar .navbar-nav .btn {
+                width: 140px;
+                height: 44px;
+                border: 1.5px solid #3454D1;
+                color: #3454D1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .navbar .navbar-nav .nav-link {
+                margin-right: -5px !important;
+                color: #3454D1 !important;
+            }
+
+            .jumbotron h1 {
+                font-size: 30px;
+                width: 100%;
+                margin-top: 170px;
+            }
+
+            .jumbotron p {
+                font-size: 16px;
+                width: 300px;
+            }
+
+            .jumbotron {
+                height: 110vh;
+            }
+
+            .kotak .kategori .btn {
+                background: #3454D1;
+                width: 100px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                color: white;
+            }
+
+            .kotak .kategori h6 {
+                font-size: 20px;
+            }
+
+            .kotak div.dropdown-menu{
+                text-align: center;
+            }
+
+            .kotak {
+                flex-direction: column;
+                height: 480px;
+                transform: translateY(1px);
+            }
+
+            .kotak .kategori {
+                text-align: center;
+            }
+
+            .kotak .kategori span {
+                color: #676767;
+                margin-top: 12px;
+                font-size: 17px;
+            }
+
+            .box {
+                margin-top: 400px;
+            }
+
+            .box .judul h1 {
+                font-size: 28px;
+                width: 100%;
+            }
+
+            .box .row .col-md-6:nth-child(1) .kota {
+                background: url('assets/img/aaron-burson-YihQdPSK9jI-unsplash.jpg');
+                background-size: cover;
+                width: 85%;
+                height: 70vh;
+            }
+
+            .box .row .col-md-6:nth-child(2) .kota {
+                margin-top: 35px;
+                background: url('assets/img/nathan-dumlao-1qsbplLDUa8-unsplash.jpg');
+                background-size: cover;
+                height: 70vh;
+                width: 85%;
+            }
+
+            .box .row .col-md-4:nth-child(1) .kota {
+                height: 78vh;
+                width: 85%;
+            }
+
+            .box .row .col-md-4:nth-child(2) .kota {
+                height: 70vh;
+                margin-top: 35px;
+                width: 85%;
+            }
+
+            .box .row .col-md-4:nth-child(3) .kota {
+                height: 70vh;
+                width: 85%;
+                margin-top: 35px;
+            }
+
+            div.owl-item {
+                display: flex;
+                justify-content: center;
+            }
+
+            .owl-carousel .item {
+                border-radius: 8px;
+                height: 406px;
+                width: 280px;
+            }
+
+            .carousel h1 {
+                font-size: 28px;
+                width: 100%;
+            }
+
+            .carousel .panah {
+                display: none;
+            }
+
+            .carousel {
+                margin-top: 130px;
+            }
+
+            .owl-carousel .item h1 {
+                font-size: 30px;
+                text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
+                margin-bottom: 28px;
+                font-family: dmsans-bold;
+                color: white;
+            }
+
+            .container4 .judul h1 {
+                font-size: 28px;
+                width: 100%;
+                font-family: dmsans-bold;
+            }
+
+            .container4 .judul span {
+                font-size: 15px;
+                width: 100%;
+                margin-top: 13px;
+                display: inline-block;
+                color: #676767;
+            }
+
+            .container4 {
+                margin-top: 80px;
+            }
+
+            .container4 .row {
+                margin-top: 50px;
+            }
+
+            .container4 .row .col-md-12 {
+                background: url('assets/img/2\ 974.png');
+                border-radius: 8px;
+                background-size: cover;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                height: 270px;
+            }
+
+            .container4 .row {
+                width: 95%;
+                margin: 30px auto;
+            }
+
+            .container4 .kotak {
+                background: #3454D1;
+                width: 80px;
+                margin-right: 30px;
+                transform: translateY(40px);
+                color: white;
+                height: 80px;
+                box-shadow: 0px 8px 32px rgba(52, 84, 209, 0.15);
+            }
+
+            .container4 .kotak h2 {
+                font-size: 16px;
+                width: 50px;
+                text-align: center;
+            }
+
+            .client .row .col-6:nth-child(1) {
+                background: url('assets/img/stefan-stefancik-QXevDflbl8A-unsplash\ 2.png');
+                background-size: cover;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                margin: auto;
+                height: 200px;
+                margin-top: 50px;
+                border-radius: 8px;
+            }
+
+            .client .row {
+                height: 550px;
+                margin-top: -30px;
+                display: block;
+            }
+
+            .carousel-inner {
+                margin-top: 160px;
+            }
+
+            .client .row .col-6:nth-child(2) .pesan img {
+                width: 38px;
+            }
+
+            .client .row .col-6:nth-child(1) .kotak2 {
+                width: 45px;
+                transform: translateY(15px) translateX(20px);
+                position: absolute;
+                border-radius: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 45px;
+                background: #3454D1;
+                box-shadow: 0px 8px 32px rgba(52, 84, 209, 0.12);
+            }
+
+            .client .row .col-6:nth-child(1) .kotak2 img {
+                width: 20px;
+            }
+
+            .client .row .col-6:nth-child(2) .pesan .nama h2 {
+                font-size: 15px;
+                width: 200px;
+                font-family: dmsans-bold;
+            }
+
+            .client .row .col-6:nth-child(2) .pesan .nama {
+
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 35px;
+                text-align: center;
+            }
+
+            .carousel-inner .clientjudul .judul h1 {
+                font-size: 28px;
+                width: 200px;
+            }
+
+            .carousel-inner .clientjudul .judul .panah {
+                display: unset;
+            }
+
+            .client .row .col-6:nth-child(2) .pesan span {
+                font-size: 14px;
+                color: #676767;
+            }
+
+            .client .row .col-6:nth-child(2) .pesan p {
+                width: 300px;
+                margin-top: -20px;
+                text-align: center;
+                line-height: 24px;
+                font-size: 15px;
+                color: #676767;
+            }
+
+            .client .row .col-6:nth-child(2) .pesan img {
+                width: 23px;
+                display: none;
+            }
+
+            .client .row .col-6:nth-child(2) .pesan {
+                display: flex;
+                /* background-color: salmon; */
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 55px;
+                margin-left: 10px;
+                height: 200px;
+            }
+
+            .kartu {
+                margin-top: -60px;
+            }
+
+            .kartu .judul h1 {
+                font-size: 28px;
+                font-family: dmsans-bold;
+            }
+
+            .kartu .row .card {
+                width: 90%;
+            }
+
+            .kartu .row {
+                margin-top: 50px;
+            }
+
+            .kartu .row .card img {
+                height: 239px;
+            }
+
+            .kartu .row .card .card-body h1 {
+                font-size: 16.5px;
+                font-family: dmsans-bold;
+            }
+
+            .kartu .row .card-body {
+                height: 250px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .kartu .row .card-body p.card-text {
+                font-size: 14px;
+                /* margin-top: 16px; */
+                color: #676767;
+                line-height: 24px;
+                width: 100%;
+            }
+
+            .kartu .row .col-md-4 {
+                display: flex;
+                justify-content: center;
+            }
+
+            .kartu .row .col-md-4:nth-child(2) .card {
+                margin-top: 35px;
+            }
+
+            .kartu .row .col-md-4:nth-child(3) .card {
+                margin-top: 35px;
+            }
+
+            .kartu .row .card-body .orang img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+
+            .kartu .row .card-body .orang {
+                display: flex;
+                height: 60px;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .kartu .row .card-body .orang .tgl {
+                font-size: 12px;
+                margin: auto 0;
+                color: #484848;
+            }
+
+            .kartu .row .card-body .orang .nama {
+                font-size: 12px;
+                margin-left: 5px;
+                color: #484848;
+            }
+
+            .footer .blog1 {
+                width: 70%;
+                display: flex;
+                height: auto;
+                justify-content: space-evenly;
+                text-align: center;
+            }
+
+            .footer .blog1 p {
+                margin-top: 10px;
+            }
+
+            .footer .blog:nth-child(2) {
+                width: 70%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .footer .blog:nth-child(3) {
+                width: 70%;
+                /* background-color: salmon; */
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .footer .blog:nth-child(4) {
+                width: 70%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .footer .blog:nth-child(4) p {
+                text-align: center;
+            }
+
+            .footer .blog h1 {
+                font-family: dmsans-bold;
+                font-size: 19px;
+            }
+
+            .footer .blog p {
+                font-size: 14px;
+                color: #676767;
+                line-height: 23px;
+                /* width: 285px; */
+            }
+
+            .footer .blog a {
+                font-size: 14px;
+            }
+
+            .footer .blog {
+                /* background-color: salmon; */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 220px;
+            }
+
+            .footer {
+                flex-direction: column;
+                height: 1000px;
+            }
+
+            .footer .kontak {
+                width: 160px;
+                margin-top: 10px;
+            }
+
+            .footer .blog .btn {
+                width: 124px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 38px;
+                font-size: 12px;
+                color: white;
+                border-radius: 8px;
+            }
+
+            .footer .blog input {
+                height: 33px;
+                margin-top: 1px;
+            }
+
+            .footer .blog ::-webkit-input-placeholder {
+                font-size: 12px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light pt-4" data-aos="fade-right">
+        <div class="container">
+            <a class="navbar-brand" href="#">Umah.</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto d-flex align-items-center">
+                    <a class="nav-link mr-5 text-light" href="#">Home</a>
+                    <a class="nav-link mr-5 text-light" href="#">Features</a>
+                    <a class="nav-link mr-5 text-light" href="#">Process</a>
+                    <a class="nav-link mr-5 text-light" href="#">About</a>
+                    <a class="nav-link mr-5 text-light" href="#">
+                        <div class="btn">Get started</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron" data-aos="fade-up">
+        <div class="container">
+            <h1 class="display-4"> Buy and Sell your property in one place</h1>
+            <p class="mt-4">We are here to help you find the perfect property and in accordance with your budget</p>
+        </div>
+        <div class="container kotak" data-aos="fade-up">
+            <div class="kategori" id="kategori">
+                <div class="dropdown">
+                    <h6 class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Looking for
+                    </h6>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <span class="dropdown-item drop1" id="action">Buy</span>
+                        <span class="dropdown-item drop1">Sell</span>
+                    </div>
+                </div>
+                <span id="buy">Buy</span>
+            </div>
+            <div class="kategori">
+                <div class="dropdown">
+                    <h6 class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Price limit
+                    </h6>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <span class="dropdown-item drop2">$150k - $450k</span>
+                        <span class="dropdown-item drop2">$450k - $750k</span>
+                        <span class="dropdown-item drop2">$750k - $1000k</span>
+                    </div>
+                </div>
+                <span id="price">$150k - $450k</span>
+            </div>
+            <div class="kategori">
+                <div class="dropdown">
+                    <h6 class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        City
+                    </h6>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <span class="dropdown-item drop3">New York</span>
+                        <span class="dropdown-item drop3">Los Angles</span>
+                        <span class="dropdown-item drop3">Miami</span>
+                        <span class="dropdown-item drop3">Florida</span>
+                        <span class="dropdown-item drop3">Las Vegas</span>
+                    </div>
+                </div>
+                <span id="city">New York</span>
+            </div>
+            <div class="kategori">
+                <a href=""><button class="btn">Search</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="container box">
+        <div class="judul">
+            <h1>Find properties in these cities</h1>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-6" data-aos="fade-up">
+                <div class="kota">
+                    <div class="overlay"></div>
+                    <h2>New York</h2>
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-up">
+                <div class="kota">
+                    <div class="overlay"></div>
+                    <h2>Los Angles</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row row2">
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="kota">
+                    <div class="overlay"></div>
+                    <h2>Miami</h2>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="kota">
+                    <div class="overlay"></div>
+                    <h2>Florida</h2>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="kota">
+                    <div class="overlay"></div>
+                    <h2>Las Vegas</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container carousel" data-aos="fade-up">
+        <div class="judul">
+            <h1>Properties for sale</h1>
+            <div class="panah">
+                <a href="#zero"><img src="assets/img/Vector (1).png" class="mr-4 panah1"></a>
+                <a href="#two"><img src="assets/img/Vector (1).png"></a>
+            </div>
+        </div>
+    </div>
+    <div class="owl-carousel">
+        <div class="item item1" data-hash="zero">
+            <div class="overlay"></div>
+            <h1>Sawaka Hotel</h1>
+        </div>
+        <div class="item item4" data-hash="for">
+            <div class="overlay"></div>
+            <h1>John House</h1>
+        </div>
+        <div class="item item3" data-hash="three">
+            <div class="overlay"></div>
+            <h1>Dom Aparment</h1>
+        </div>
+        <div class="item item4" data-hash="for">
+            <div class="overlay"></div>
+            <h1>Umah Bedeg</h1>
+        </div>
+    </div>
+    <div class="container container4">
+        <div class="judul" data-aos="fade-up">
+            <h1>We provide the best quality</h1>
+            <span>Our properties are the highest quality and are checked in detail for safety</span>
+        </div>
+        <div class="row">
+            <div class="col-md-12" data-aos="fade-up">
+                <div class="kotak">
+                    <h2>Since 1982</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" data-aos="fade-up">
+            <div class="container clientjudul">
+                <div class="judul mb-4">
+                    <h1>What our client say</h1>
+                    <div class="panah">
+                        <a href="#carouselExampleInterval" role="button" data-slide="prev"><img
+                                src="assets/img/Vector (1).png" class="mr-4 panah1"></a>
+                        <a href="#carouselExampleInterval" role="button" data-slide="next"><img
+                                src="assets/img/Vector (1).png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item active" data-interval="10000">
+                <div class="container client">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="kotak2">
+                                <img src="assets/img/like.png">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="pesan d-flex">
+                                <img src="assets/img/Group.png">
+                                <p>Umah helps me find the apartment I need, with nice features and budget affordable,
+                                    agents from
+                                    Umah also always help me in completing each step.</p>
+
+                                <div class="nama">
+                                    <h2>Kathryn Murphy</h2>
+                                    <span>Model</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-interval="10000">
+                <div class="container client">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="kotak2">
+                                <img src="assets/img/like.png">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="pesan d-flex">
+                                <img src="assets/img/Group.png">
+                                <p>Umah helps me find the apartment I need, with nice features and budget affordable,
+                                    agents from
+                                    Umah also always help me in completing each step.</p>
+
+                                <div class="nama">
+                                    <h2>Kathryn Murphy</h2>
+                                    <span>Model</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a> -->
+    </div>
+
+    <div class="container kartu">
+        <div class="judul">
+            <h1>Latest news</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" data-aos="fade-up">
+                    <img src="assets/img/daniel-dinuzzo-qCjolcMFaLI-unsplash.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1>Find the right property</h1>
+                        <p class="card-text">Finding the right property is important, here’s are some tips to find the
+                            right property for...</p>
+                        <div class="orang">
+                            <div class="profile">
+                                <img src="assets/img/paul-castanie-fG_ud73U_ZM-unsplash.png">
+                                <span class="nama">Wade Warren</span>
+                            </div>
+                            <p class="tgl">6 January 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" data-aos="fade-up">
+                    <img src="assets/img/ralph-ravi-kayden-2d4lAQAlbDA-unsplash.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1>Buy Homes Safely During Coronavirus</h1>
+                        <p class="card-text">the property are still for sale, with a 360° virtual tour feature that
+                            allows you to view...</p>
+                        <div class="orang">
+                            <div class="profile">
+                                <img src="assets/img/luis-villasmil-hh3ViD0r0Rc-unsplash.png">
+                                <span class="nama">Ronald Richards</span>
+                            </div>
+                            <p class="tgl">13 March 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" data-aos="fade-up">
+                    <img src="assets/img/alexander-mils-lCPhGxs7pww-unsplash.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h1>How to save money to buy properties</h1>
+                        <p class="card-text">finding the right way to save money is the key to buy properties you want,
+                            if you can find the...</p>
+                        <div class="orang">
+                            <div class="profile">
+                                <img src="assets/img/selective-focus-photography-of-woman-1239288 2.png">
+                                <span class="nama">Jenny Wilson</span>
+                            </div>
+                            <p class="tgl">21 March 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer" data-aos="fade-up">
+        <div class="blog blog1" data-aos="fade-up">
+            <h1>Umah.</h1>
+            <p>We are here to help you find the perfect property and in accordance with your budget</p>
+            <div class="kontak">
+                <img src="assets/img/Facebook.png">
+                <img src="assets/img/Instagram.png">
+                <img src="assets/img/Twitter.png">
+            </div>
+        </div>
+        <div class="blog" data-aos="fade-up">
+            <h1>Navigation</h1>
+            <a href="">Home</a>
+            <a href="">Features</a>
+            <a href="">Process</a>
+            <a href="">About</a>
+        </div>
+        <div class="blog" data-aos="fade-up">
+            <h1>Information</h1>
+            <a href="">FAQ's</a>
+            <a href="">Customer Reviews</a>
+            <a href="">Return Policy</a>
+            <a href="">Secured Payment</a>
+        </div>
+        <div class="blog">
+            <h1>Newslatter</h1>
+            <p>Subscribe to recieve updates, acess to exclusive deals, and more</p>
+            <input class="form-control" type="text" placeholder="Enter your email addreess">
+            <a href="" class="btn">SUBSCRIBE</a>
+        </div>
+    </div>
+
+
+    <script src="assets/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="owlcarousel/js/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: -80,
+                responsiveClass: true,
+                URLhashListener: true,
+                autoplayHoverPause: true,
+                startPosition: 'URLHash',
+                responsive: {
+                    0: {
+                        items: 1,
+                        margin: 0,
+                        nav: true
+                    },
+                    463: {
+                        items: 2,
+                        margin: 20,
+                        nav: false
+                    },
+                    1150: {
+                        items: 3,
+                        margin: -60,
+                        nav: true,
+                        loop: false
+                    }
+                }
+            });
+        });
+
+        // $(document).ready(function () {
+        //     $(".owl-carousel").owlCarousel();
+        // });
+
+        AOS.init({
+            offset: 200,
+            duration: 500,
+        });
+    </script>
+</body>
+
+</html>
